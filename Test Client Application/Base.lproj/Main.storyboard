@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="233-Yj-vPX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test_Client_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Loading Text.." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q8A-RT-tLW">
+                                <rect key="frame" x="22" y="373" width="370" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="I3r-e1-0fM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0A-aM-VDS">
+                                <rect key="frame" x="147" y="545" width="120" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fTf-1g-7JJ">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="40" id="znf-r1-pb0"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Update Values">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshDataWith_sener:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUg-li-ONv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q8A-RT-tLW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8M9-OH-STJ"/>
+                            <constraint firstItem="Q8A-RT-tLW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F4z-Ho-xw7"/>
+                            <constraint firstItem="Q8A-RT-tLW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="MWW-ld-mML"/>
+                            <constraint firstItem="g0A-aM-VDS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NEs-Ii-XaZ"/>
+                            <constraint firstItem="g0A-aM-VDS" firstAttribute="top" secondItem="Q8A-RT-tLW" secondAttribute="bottom" constant="22" id="VeM-uT-Q8H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q8A-RT-tLW" secondAttribute="trailing" constant="22" id="ekV-hO-sGe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Q8A-RT-tLW" id="5Qx-Qa-ELP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="66"/>
+        </scene>
+        <!--Rider TrackerVC-->
+        <scene sceneID="MmH-09-yxG">
+            <objects>
+                <viewController storyboardIdentifier="RiderTrackerVC" id="233-Yj-vPX" customClass="RiderTrackerVC" customModule="Test_Client_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5QH-xu-xev">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx3-Gz-0b3" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ja4-Lt-xB1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ja4-Lt-xB1" firstAttribute="trailing" secondItem="kx3-Gz-0b3" secondAttribute="trailing" id="LR5-5E-wwZ"/>
+                            <constraint firstItem="kx3-Gz-0b3" firstAttribute="leading" secondItem="Ja4-Lt-xB1" secondAttribute="leading" id="Qi6-ds-UIa"/>
+                            <constraint firstItem="kx3-Gz-0b3" firstAttribute="top" secondItem="Ja4-Lt-xB1" secondAttribute="top" id="dn7-VT-l74"/>
+                            <constraint firstItem="Ja4-Lt-xB1" firstAttribute="bottom" secondItem="kx3-Gz-0b3" secondAttribute="bottom" id="pMk-LB-LCp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="kx3-Gz-0b3" id="Tm3-jP-vLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7k-XX-7MS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

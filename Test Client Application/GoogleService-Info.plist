@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>557901546526-4lg43803tjoe57v045nqugba48bkrudh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.557901546526-4lg43803tjoe57v045nqugba48bkrudh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDKmwVIUuXr6AYNhag0MKdNOut58OT9LoI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>557901546526</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Myapp.Test-Client-Delivery-App</string>
+	<key>PROJECT_ID</key>
+	<string>rider-tracker-test</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rider-tracker-test.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:557901546526:ios:b30c6a42ebc3f765bd5a0f</string>
+	<key>DATABASE_URL</key>
+	<string>https://rider-tracker-test-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
